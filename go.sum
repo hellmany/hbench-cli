@@ -1,6 +1,0 @@
-github.com/hellmany/hbench v0.0.0-20220913170655-060ba29b3a6f h1:1hcTnYIoU3DqDQdKKb+yQcMXJRXPfqPAY89uAj9SeD0=
-github.com/hellmany/hbench v0.0.0-20220913170655-060ba29b3a6f/go.mod h1:sGXKrSiVRK5HJIofcmmf9iqE4Z6gfz1M9veOtg9sfuw=
-github.com/inhies/go-bytesize v0.0.0-20220417184213-4913239db9cf h1:FtEj8sfIcaaBfAKrE1Cwb61YDtYq9JxChK1c7AKce7s=
-github.com/inhies/go-bytesize v0.0.0-20220417184213-4913239db9cf/go.mod h1:yrqSXGoD/4EKfF26AOGzscPOgTTJcyAwM2rpixWT+t4=
-github.com/remeh/sizedwaitgroup v1.0.0 h1:VNGGFwNo/R5+MJBf6yrsr110p0m4/OX4S3DCy7Kyl5E=
-github.com/remeh/sizedwaitgroup v1.0.0/go.mod h1:3j2R4OIe/SeS6YDhICBy22RWjJC5eNCJ1V+9+NVNYlo=

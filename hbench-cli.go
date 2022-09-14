@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"log"
 
 	hbench "github.com/hellmany/hbench"
 )
@@ -19,13 +20,22 @@ func main() {
 	flag.IntVar(&c.Inter, "i", 1, "interations to read")
 	flag.IntVar(&c.Size, "s", 1, "size to read/write in Mb, 0 - full file to read")
 	flag.IntVar(&c.RandSize, "r", 3, "add rand mb to size writing")
-	flag.StringVar(&c.Path, "p", "/stor/tmp", "path")
+	flag.BoolVar(&c.DebugInfo, "d", true, "Debug info")
 	flag.Parse()
 
 	if action == "gen" {
-		hbench.Gen(c)
+		r, err := hbench.Gen(c)
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Printf("r: %+v", r)
+
 	} else if action == "bench" {
-		hbench.Bench(c)
+		r, err := hbench.Bench(c)
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Printf("r: %+v", r)
 	} else {
 		flag.PrintDefaults()
 	}
