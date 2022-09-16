@@ -14,6 +14,7 @@ func main() {
 	var action string
 	flag.StringVar(&action, "a", "", "Action gen|bench - required")
 
+	flag.StringVar(&c.Extension, "e", ".mp4", "File Extension to read/write - default .mp4")
 	flag.IntVar(&c.Threads, "t", 100, "threads to read/write")
 	flag.IntVar(&c.Max, "m", 1000, "max files to read/write, 0 - to read all")
 	flag.IntVar(&c.LimitMax, "l", 1000, "limit max files to read before rand, 0 - to read all")
